@@ -15,6 +15,7 @@
 <script type="text/javascript">
 let a=document.querySelector("#first")
 let b=document.querySelector("#second")
+let c=document.querySelector("button")
 a.addEventListener("mousedown",event=>{
 	conlog.log("Outer div")
 });
@@ -22,7 +23,7 @@ a.addEventListener("mousedown",event=>{
 b.addEventListener("mousedown",event=>{
 	conlog.log("inner div")
 });
-button.addEventListener("mousedown",event=>{
+c.addEventListener("mousedown",event=>{
 	if(event.button==2) event.stopPropagation();
 });
 
