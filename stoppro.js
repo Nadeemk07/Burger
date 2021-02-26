@@ -5,8 +5,8 @@
 	<title>Nadeem Kaisar javascript</title>
 </head>
 <body>
-<div id="first"> 
-     <div id="second"> 
+<div id="first"> I ma first
+     <div id="second"> I am second
       <button>Click here</button>
 
      </div>

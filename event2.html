@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<button>A</button>
+<button>B</button>
+<button>C</button>
+
+</body>
+
+<script>
+  document.body.addEventListener("click", event => {
+  	// console.log(event);
+    if (event.target.nodeName == "BUTTON") {
+      console.log("Clicked", event.target.textContent);
+    }else{
+    	console.log("Clicked body");
+    }
+
+    
+  });
+</script>
+</html>
+
+

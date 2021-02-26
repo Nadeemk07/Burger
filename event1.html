@@ -1,0 +1,30 @@
+
+<span>
+	This is Span
+	<p>
+
+		A paragraph with a 
+		<button>button</button>.
+	</p>
+</span>
+
+<script>
+  let para = document.querySelector("p");
+  let button = document.querySelector("button");
+  let span   = document.querySelector("span"  );
+  
+  span.addEventListener("mousedown", () => {
+    console.log("Handler for span.");
+  });
+
+  para.addEventListener("mousedown", () => {
+    console.log("Handler for paragraph.");
+    console.log(eve)
+    event.stopPropagation();
+  });
+
+
+  button.addEventListener("mousedown", event => {
+    console.log("Handler for button.");
+  });
+</script>
